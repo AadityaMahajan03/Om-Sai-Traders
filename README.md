@@ -31,6 +31,7 @@ The **admin login page** ensures secure access to the management system. Only au
 
 ### After Login - Dashboard
 ![Dashboard](https://github.com/AadityaMahajan03/Om-Sai-Traders/blob/b552f19e06bf719a7b9aa6712b383d4f0d876aa8/Om%20Sai%20Traders%20Web%20App/app/dashboard2.png)
+
 The **dashboard** provides an overview of key metrics, including supplier information, inventory levels, sales performance, and financial summaries.
 
 ---
@@ -49,8 +50,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/om-sai-traders.git
-   cd om-sai-traders
+   git clone https://github.com/AadityaMahajan03/Om-Sai-Traders.git
+   cd Om-Sai-Traders
    ```
 
 2. **Create a virtual environment**
@@ -90,32 +91,54 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-## 📂 Project Structure
+## 📂 Advanced Project Structure
 
 ```
 om-sai-traders/
-├── manage.py
-├── om_sai_traders/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-├── inventory/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── suppliers/
-├── sales/
-├── customers/
-├── finance/
-├── templates/
-├── static/
-└── requirements.txt
+├── app/                              # Main application directory
+│   ├── core/                         # Core functionality of the app
+│   │   ├── migrations/               # Database migrations
+│   │   ├── __init__.py
+│   │   ├── admin.py                  # Admin panel configuration
+│   │   ├── apps.py                   # App configuration
+│   │   ├── models.py                 # Database models
+│   │   ├── tests.py                  # Unit tests
+│   │   ├── views.py                  # View logic
+│   │   └── urls.py                   # URL routing for core app
+│   ├── home/                         # Home page functionality
+│   │   ├── migrations/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   ├── views.py
+│   │   └── urls.py
+│   ├── static/                       # Static files (CSS, JS, images)
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   ├── templates/                    # HTML templates
+│   │   ├── base.html                 # Base template
+│   │   ├── core/                     # Core app templates
+│   │   └── home/                     # Home app templates
+│   ├── venv/                         # Virtual environment
+│   ├── .gitignore                    # Files to ignore in Git
+│   ├── build.sh                      # Build script
+│   ├── db.sqlite3                    # SQLite database
+│   ├── docker-compose.yml            # Docker Compose configuration
+│   ├── Dockerfile                    # Docker configuration
+│   ├── env.sample                    # Environment variables template
+│   ├── gulpfile.js                   # Gulp configuration
+│   ├── gunicorn-cfg.py               # Gunicorn configuration
+│   ├── manage.py                     # Django management script
+│   ├── package.json                  # Node.js dependencies
+│   ├── postcss.config.js             # PostCSS configuration
+│   ├── render.yaml                   # Render deployment configuration
+│   ├── requirements.txt              # Python dependencies
+│   └── tailwind.config.js            # Tailwind CSS configuration
+├── CHANGELOG.md                      # Project changelog
+└── README.md                         # Project README
 ```
 
 ---
@@ -126,6 +149,9 @@ om-sai-traders/
 - **SQLite** - Database management
 - **HTML/CSS/JavaScript** - Frontend development
 - **Bootstrap** - Frontend styling
+- **Docker** - Containerization
+- **Gunicorn** - Production server
+- **Nginx** - Web server
 
 ---
 
@@ -141,6 +167,12 @@ We welcome contributions! Please follow these steps to contribute:
 
 ---
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 ## 🙏 Acknowledgments
 
 - Hat tip to anyone whose code was used.
@@ -151,7 +183,7 @@ We welcome contributions! Please follow these steps to contribute:
 
 ## 📧 Contact
 
-For any inquiries, please reach out to us at [your-email@example.com](mailto:mahajanaaditya50.com).
+For any inquiries, please reach out to us at [mahajanaaditya50@gmail.com](mailto:mahajanaaditya50@gmail.com).
 
 ---
 
